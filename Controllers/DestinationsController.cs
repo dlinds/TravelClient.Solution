@@ -25,5 +25,30 @@ namespace TravelClient.Controllers
       var thisDestination = Destination.GetDetails(id);
       return View(thisDestination);
     }
+
+    public ActionResult Create()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Destination destination)
+    {
+      Destination.Post(destination);
+      return RedirectToAction("Index");
+    }
+
+    public ActionResult Edit(int id)
+    {
+      var thisDestination = Destination.GetDetails(id);
+      return View(thisDestination);
+    }
+
+    [HttpPost]
+    public IActionResult Edit(Destination destination)
+    {
+      Destination.Put(destination);
+      return RedirectToAction("Index");
+    }
   }
 }

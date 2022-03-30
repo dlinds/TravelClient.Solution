@@ -42,3 +42,5 @@ C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\bin\Debug\net5.0\RestSha
 C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\obj\Debug\net5.0\Razor\Views\Destinations\Index.cshtml.g.cs
 C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\obj\Debug\net5.0\Razor\Views\Destinations\Details.cshtml.g.cs
+C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\obj\Debug\net5.0\Razor\Views\Destinations\Create.cshtml.g.cs
+C:\Users\DanielLindsey\Desktop\c#\TravelClient.Solution\obj\Debug\net5.0\Razor\Views\Destinations\Edit.cshtml.g.cs
