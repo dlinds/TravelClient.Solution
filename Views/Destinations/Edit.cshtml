@@ -3,10 +3,10 @@
 
 <div class="container bg-light bg-gradient p-5 border rounded-3">
   <div class="mx-5 p-5 border rounded shadow-sm bg-white">
-    <h3 class="mb-3">Create a destination</h3>
+    <h3 class="mb-3">Edit a destination</h3>
     <div class="row">
       <div class="col-7">
-        @using (Html.BeginForm("Create", "Destinations", FormMethod.Post))
+        @using (Html.BeginForm("Edit", "Destinations", FormMethod.Post))
         {
           @Html.LabelFor(m => m.Country)
           @Html.TextBoxFor(m => m.Country, new {@class="form-control mb-3 shadow-sm", required="required" })
@@ -20,12 +20,14 @@
           @Html.LabelFor(m => m.ImgLink)
           @Html.TextBoxFor(m => m.ImgLink, new {@class="form-control mb-3 shadow-sm"})
 
-          @Html.HiddenFor(m => m.NumOfReviews, new {@value=0})
-          <input type="submit" value="Add" class="btn travel-color-darkest text-white mb-3 shadow-sm" />
+          @Html.HiddenFor(m => m.NumOfReviews)
+          @Html.HiddenFor(m => m.AverageRating)
+          @Html.HiddenFor(m => m.DestinationId)
+          <input type="submit" value="Edit" class="btn travel-color-darkest text-white mb-3 shadow-sm" />
         }
       </div>
       <div class="col-5">
-        <p>Use the form to the left to add a destination!</p>
+        <p>Use the form to the left to edit a destination!</p>
       </div>
     </div>
   </div>

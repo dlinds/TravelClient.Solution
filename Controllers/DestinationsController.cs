@@ -38,7 +38,7 @@ namespace TravelClient.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResult Edit(int id)
+    public IActionResult Edit(int id)
     {
       var thisDestination = Destination.GetDetails(id);
       return View(thisDestination);
@@ -48,6 +48,13 @@ namespace TravelClient.Controllers
     public IActionResult Edit(Destination destination)
     {
       Destination.Put(destination);
+      return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+      Destination.Delete(id);
       return RedirectToAction("Index");
     }
   }
