@@ -84,7 +84,7 @@
             </div>
             <div class="modal fade" id="exampleModal-@x" tabindex="-1" aria-labelledby="#@Model[x].DestinationId-ModalLabel" aria-hidden="true">
               <div class="modal-dialog">
-                @using (Html.BeginForm("Post", "Review"))
+                @using (Html.BeginForm("Create", "Reviews"))
                 {
                 <div class="modal-content">
                   <div class="modal-header">
@@ -94,13 +94,17 @@
                   <div class="modal-body px-5 bg-light">
                     <div class="form-group">
                       <label for="reviewText-@x">Review Body</label>
-                      <textarea rows="10" class="form-control mb-3 shadow-sm" name="reviewText" id="reviewText-@x" required="required"></textarea>
+                      <textarea rows="10" class="form-control mb-3 shadow-sm" name="Review.ReviewText" id="reviewText-@x" required="required"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="reviewUserName-@x">User Name</label>
+                      <input type="text" class="form-control mb-3 shadow-sm" name="Review.UserName" id="reviewUserName-@x" required="required">
                     </div>
                     <div class="form-group">
                       <label for="rating-@x">Rating, out of 10</label>
-                      <input type="number" class="form-control w-25 shadow-sm mb-3" name="rating" id="rating-@x" min=0 max=10>
+                      <input type="number" class="form-control w-25 shadow-sm mb-3" name="Review.Rating" id="rating-@x" min=0 max=10>
                     </div>
-                    <input type="hidden" value="@Model[x].DestinationId" name="DestinationId">
+                    <input type="hidden" value="@Model[x].DestinationId" name="Review.DestinationId">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
