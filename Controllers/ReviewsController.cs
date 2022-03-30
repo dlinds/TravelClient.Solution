@@ -14,6 +14,10 @@ namespace TravelClient.Controllers
 {
   public class ReviewsController : Controller
   {
+    public ActionResult Index()
+    {
+      return View();
+    }
     [HttpPost]
     public IActionResult Create(Review review)
     {
