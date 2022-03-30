@@ -13,6 +13,7 @@ namespace TravelClient.Models
     public string Name { get; set; }
     public float AverageRating { get; set; }
     public int NumOfReviews { get; set; }
+    public string ImgLink { get; set; }
 
     public static List<Destination> GetDestinations()
     {
