@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Reviews\\Details.cshtml",
+      "TargetPath": "Views\\Reviews\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

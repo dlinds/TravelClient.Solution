@@ -1,0 +1,14 @@
+<h1>Review Details</h1>
+@using TravelClient.Models;
+@model TravelClient.Models.Review
+@if (@Model.ReviewId == 0)
+{
+  <h5>No reviews for this place.</h5>
+}
+else
+{
+  <ul>
+    <li>Review Text: @Model.ReviewText</li>
+    <li>Review User : @Model.UserName</li>
+  </ul>
+}

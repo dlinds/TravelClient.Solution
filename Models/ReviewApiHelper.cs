@@ -5,14 +5,23 @@ namespace TravelClient.Models
 {
   class ReviewApiHelper
   {
-
-    public static async Task<string> GetAllByDestination(string name)
+    // /reviews?type=country&value=Germany
+    public static async Task<string> GetAllByDestination(string type, string value)
     {
       RestClient client = new RestClient("http://localhost:5000/api");
-      RestRequest request = new RestRequest($"reviews?name={name}", Method.GET);
+      RestRequest request = new RestRequest($"reviews?{type}={value}", Method.GET);
       var response = await client.ExecuteTaskAsync(request);
       return response.Content;
     }
+
+    public static async Task<string> Get(int id)
+    {
+      RestClient client = new RestClient("http://localhost:5000/api");
+      RestRequest request = new RestRequest($"reviews/{id}", Method.GET);
+      var response = await client.ExecuteTaskAsync(request);
+      return response.Content;
+    }
+
 
     public static async Task Post(string newReview)
     {

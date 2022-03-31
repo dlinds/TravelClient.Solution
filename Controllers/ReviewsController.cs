@@ -18,10 +18,10 @@ namespace TravelClient.Controllers
     // {
     //   return View();
     // }
-
-    public IActionResult Index(string name)
+    // /reviews?type=country&value=Germany
+    public IActionResult Index(string type, string value)
     {
-      var allReviewsByDestination = Review.GetReviews(name);
+      var allReviewsByDestination = Review.GetReviews(type, value);
       ViewBag.ThisDestination = Destination.GetDetails(allReviewsByDestination[0].DestinationId);
       return View(allReviewsByDestination);
     }
@@ -30,6 +30,12 @@ namespace TravelClient.Controllers
     {
       Review.Post(review);
       return RedirectToAction("Index", "Destinations");
+    }
+
+    public IActionResult Details(int id)
+    {
+      var thisReview = Review.GetReviewDetails(id);
+      return View(thisReview);
     }
   }
 }
