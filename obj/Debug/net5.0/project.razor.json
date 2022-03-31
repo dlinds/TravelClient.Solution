@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Reviews\\Edit.cshtml",
+      "TargetPath": "Views\\Reviews\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

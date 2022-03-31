@@ -37,5 +37,18 @@ namespace TravelClient.Controllers
       var thisReview = Review.GetReviewDetails(id);
       return View(thisReview);
     }
+
+    public IActionResult Edit(int id)
+    {
+      var thisReview = Review.GetReviewDetails(id);
+      return View(thisReview);
+    }
+
+    [HttpPost]
+    public IActionResult Edit(Review review)
+    {
+      Review.Put(review);
+      return RedirectToAction("Index");
+    }
   }
 }

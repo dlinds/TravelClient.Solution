@@ -52,12 +52,12 @@ namespace TravelClient.Models
       var response = await client.ExecuteTaskAsync(request);
     }
 
-    public static async Task Put(int id, string newDestination)
+    public static async Task Put(int id, string updatedDestination)
     {
       RestClient client = new RestClient("http://localhost:5000/api");
       RestRequest request = new RestRequest($"destinations/{id}", Method.PUT);
       request.AddHeader("Content-Type", "application/json");
-      request.AddJsonBody(newDestination);
+      request.AddJsonBody(updatedDestination);
       var response = await client.ExecuteTaskAsync(request);
     }
 

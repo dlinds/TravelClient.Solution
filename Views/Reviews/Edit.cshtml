@@ -1,0 +1,30 @@
+@using TravelClient.Models
+@model TravelClient.Models.Review
+
+<div class="container bg-light bg-gradient p-5 border rounded-3">
+  <div class="mx-5 p-5 border rounded shadow-sm bg-white">
+    <h3 class="mb-3">Edit a review</h3>
+    <div class="row">
+      <div class="col-7">
+        @using (Html.BeginForm("Edit", "Reviews", FormMethod.Post))
+        {
+          @Html.LabelFor(m => m.ReviewText)
+          @Html.TextBoxFor(m => m.ReviewText, new {@class="form-control mb-3 shadow-sm", required="required" })
+
+          @Html.LabelFor(m => m.UserName)
+          @Html.TextBoxFor(m => m.UserName, new {@class="form-control mb-3 shadow-sm", required="required" })
+
+          @Html.LabelFor(m => m.Rating)
+          @Html.TextBoxFor(m => m.Rating, new {@class="form-control mb-3 shadow-sm", required="required", type="number", min="1", max="10" })
+
+          @Html.HiddenFor(m => m.DestinationId)
+          @Html.HiddenFor(m => m.ReviewId)
+          <input type="submit" value="Edit" class="btn travel-color-darkest text-white mb-3 shadow-sm" />
+        }
+      </div>
+      <div class="col-5">
+        <p>Use the form to the left to edit a review!</p>
+      </div>
+    </div>
+  </div>
+</div>
