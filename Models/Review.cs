@@ -49,5 +49,9 @@ namespace TravelClient.Models
       var apiCallTask = ReviewApiHelper.Put(review.ReviewId, jsonReview, review.UserName);
     }
 
+    public static void Delete(int id)
+    {
+      var apiCallTask = ReviewApiHelper.Delete(id);
+    }
   }
 }

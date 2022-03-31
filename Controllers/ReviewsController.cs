@@ -50,5 +50,12 @@ namespace TravelClient.Controllers
       Review.Put(review);
       return RedirectToAction("Index");
     }
+
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+      Review.Delete(id);
+      return RedirectToAction("Index");
+    }
   }
 }
