@@ -15,9 +15,9 @@ namespace TravelClient.Models
     public int NumOfReviews { get; set; }
     public string ImgLink { get; set; }
 
-    public static List<Destination> GetDestinations()
+    public static List<Destination> GetDestinations(string sortMethod)
     {
-      var apiCallTask = DestinationApiHelper.GetAll();
+      var apiCallTask = DestinationApiHelper.GetAll(sortMethod);
       var result = apiCallTask.Result;
 
       JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);

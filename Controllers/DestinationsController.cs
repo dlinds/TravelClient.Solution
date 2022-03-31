@@ -14,9 +14,9 @@ namespace TravelClient.Controllers
 {
   public class DestinationsController : Controller
   {
-    public IActionResult Index()
+    public IActionResult Index(string sortMethod)
     {
-      var allDestinations = Destination.GetDestinations();
+      var allDestinations = Destination.GetDestinations(sortMethod);
       return View(allDestinations);
     }
 

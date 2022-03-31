@@ -5,11 +5,25 @@ namespace TravelClient.Models
 {
   class DestinationApiHelper
   {
-    public static async Task<string> GetAll()
+    public static async Task<string> GetAll(string sortMethod)
     {
       RestClient client = new RestClient("http://localhost:5000/api");
       RestRequest request = new RestRequest($"destinations", Method.GET);
       var response = await client.ExecuteTaskAsync(request);
+
+      if (sortMethod == "numOfReviews")
+      {
+        client = new RestClient("http://localhost:5000/api");
+        request = new RestRequest($"destinations?sortMethod=numOfReviews", Method.GET);
+        response = await client.ExecuteTaskAsync(request);
+      }
+      else if (sortMethod == "averageRating")
+      {
+        client = new RestClient("http://localhost:5000/api");
+        request = new RestRequest($"destinations?sortMethod=averageRating", Method.GET);
+        response = await client.ExecuteTaskAsync(request);
+      }
+
       return response.Content;
     }
 
