@@ -22,6 +22,7 @@ namespace TravelClient.Controllers
     public IActionResult Index(string name)
     {
       var allReviewsByDestination = Review.GetReviews(name);
+      ViewBag.ThisDestination = Destination.GetDetails(allReviewsByDestination[0].DestinationId);
       return View(allReviewsByDestination);
     }
     [HttpPost]

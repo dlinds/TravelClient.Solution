@@ -6,10 +6,10 @@
   <div class="px-5">
     <div class="d-flex justify-content-center flex-nowrap">
       <div class="card shadow-sm mb-4">
-        <img class="card-img-top rounded" style="filter: brightness(75%); object-fit: cover;" src="https://cdn.getyourguide.com/img/tour/5d4c31d4123d3.jpeg/99.jpg" alt="picture of place">
+        <img class="card-img-top rounded" style="filter: brightness(75%); object-fit: cover;" src="@ViewBag.ThisDestination.ImgLink" alt="picture of place">
         <div class="card-img-overlay mt-4 p-5 text-white">
-          <h1 class="fw-normal text-center mt-2 mb-0 fs-1">Eiffel Tower</h1>
-          <h4 class="fw-light text-center mb-3 fs-3">Paris, France</h4>
+          <h1 class="fw-normal text-center mt-2 mb-0 fs-1">@ViewBag.ThisDestination.Name</h1>
+          <h4 class="fw-light text-center mb-3 fs-3">@ViewBag.ThisDestination.City, @ViewBag.ThisDestination.Country</h4>
         </div>
       </div>
     </div>
