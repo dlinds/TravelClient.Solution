@@ -21,6 +21,14 @@ namespace TravelClient.Models
       return response.Content;
     }
 
+    public static async Task<string> GetRandomDestination()
+    {
+      RestClient client = new RestClient("http://localhost:5000/api");
+      RestRequest request = new RestRequest($"destinations/GetRandom", Method.GET);
+      var response = await client.ExecuteTaskAsync(request);
+      return response.Content;
+    }
+
     public static async Task Post(string newDestination)
     {
       RestClient client = new RestClient("http://localhost:5000/api");

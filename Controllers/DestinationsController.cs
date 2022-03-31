@@ -26,6 +26,14 @@ namespace TravelClient.Controllers
       return View(thisDestination);
     }
 
+    public IActionResult GetRandom()
+    {
+      var thisDestination = Destination.GetRandom();
+      // return View(thisDestination);
+
+      return RedirectToAction("Details", new { id = thisDestination.DestinationId });
+    }
+
     public ActionResult Create()
     {
       return View();

@@ -14,9 +14,15 @@ namespace TravelClient.Controllers
 {
   public class ReviewsController : Controller
   {
-    public ActionResult Index()
+    // public ActionResult Index()
+    // {
+    //   return View();
+    // }
+
+    public IActionResult Index(string name)
     {
-      return View();
+      var allReviewsByDestination = Review.GetReviews(name);
+      return View(allReviewsByDestination);
     }
     [HttpPost]
     public IActionResult Create(Review review)

@@ -26,6 +26,16 @@ namespace TravelClient.Models
       return destinationList;
     }
 
+    public static Destination GetRandom()
+    {
+      var apiCallTask = DestinationApiHelper.GetRandomDestination();
+      var result = apiCallTask.Result;
+
+      JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
+      Destination destination = JsonConvert.DeserializeObject<Destination>(jsonResponse.ToString());
+      return destination;
+    }
+
     public static Destination GetDetails(int id)
     {
       var apiCallTask = DestinationApiHelper.Get(id);
@@ -36,6 +46,8 @@ namespace TravelClient.Models
 
       return destination;
     }
+
+
 
     public static void Post(Destination destination)
     {
