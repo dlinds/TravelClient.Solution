@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\TravelClient.Solution.csproj": {}
+    "C:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\TravelClient.Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\TravelClient.Solution.csproj": {
+    "C:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\TravelClient.Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\TravelClient.Solution.csproj",
+        "projectUniqueName": "C:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\TravelClient.Solution.csproj",
         "projectName": "TravelClient.Solution",
-        "projectPath": "C:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\TravelClient.Solution.csproj",
+        "projectPath": "C:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\TravelClient.Solution.csproj",
         "packagesPath": "C:\\Users\\DanielLindsey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\obj\\",
+        "outputPath": "C:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

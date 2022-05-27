@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\TravelClient.Solution.csproj",
+  "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\TravelClient.Solution.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,72 +15619,72 @@
   "RootNamespace": "TravelClient.Solution",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Destinations\\Create.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Destinations\\Create.cshtml",
       "TargetPath": "Views\\Destinations\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Destinations\\Index.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Destinations\\Index.cshtml",
       "TargetPath": "Views\\Destinations\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Reviews\\Edit.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Reviews\\Edit.cshtml",
       "TargetPath": "Views\\Reviews\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Reviews\\Details.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Reviews\\Details.cshtml",
       "TargetPath": "Views\\Reviews\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Destinations\\Details.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Destinations\\Details.cshtml",
       "TargetPath": "Views\\Destinations\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Destinations\\Edit.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Destinations\\Edit.cshtml",
       "TargetPath": "Views\\Destinations\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Reviews\\Index.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Reviews\\Index.cshtml",
       "TargetPath": "Views\\Reviews\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\c#\\TravelClient.Solution\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\DanielLindsey\\Desktop\\C#\\TravelClient.Solution\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }

@@ -31,7 +31,7 @@ namespace TravelClient.Controllers
       Review.Post(review);
       return RedirectToAction("Index", "Destinations");
     }
-
+    // [HttpGet("destinations/reviews/{id}")]
     public IActionResult Details(int id)
     {
       var thisReview = Review.GetReviewDetails(id);
